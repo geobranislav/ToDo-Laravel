@@ -53,7 +53,7 @@ class TodoController extends Controller
      * @param  \App\Todos  $todos
      * @return \Illuminate\Http\Response
      */
-    public function show(Todos $todos)
+    public function show($id)
     {
         return Todo::find($id);
     }
