@@ -41,7 +41,7 @@ class TodoController extends Controller
             'title' => $request['title'],
             'priority' => $request['priority'],
             'completed' => $request['completed'],
-            'user_id' => 1
+            'user_id' => Auth::user()->id
         ]);
 
         return $todo;
